@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <title>Halloween Night</title>
+    <style>
+        body {
+            background-color: black
+        }
+        #wrapper {
+            position: relative;
+            background-image:url("imagenes/elfondoo.jpg");
+            width:1600px;
+            height:900px;
+            margin:auto;
+            border-radius:500px;
+            box-shadow:#354447 20px 20px 20px;
+        }
+        h1 {
+            font-size:8vh;
+            position:absolute;
+            font-family: 'Creepster', cursive;
+            color:black   ;
+            left: 650px;
+            top: 750px;
+        }
+        #p1 {
+            position:absolute;
+            top:200px;
+            left:250px;
+            font-size: 5vh;
+            font-family: 'Creepster', cursive;  
+        }
+        #axe {
+            position:absolute;
+            width:250px;
+            height:110px;
+            left:480px;
+            top:530px;
+        }
+        #head {
+            position:absolute;
+            width:130px;
+            height:110px;
+            border:1px solid red;
+            left:670px;
+            top:110px;
+        }
+        #gif {
+            position:absolute;
+            top:100px;
+            left:600px;
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        function mostrar(id){
+            document.getElementById(id).style.visibility="visible";
+        }
+        function ocultar(id){
+            document.getElementById(id).style.visibility="hidden";
+        }
+    
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>The hunter</h1>
+        <p id="p1">Dont touch the axe!...</p>
+        <div id="axe" onclick="mostrar('gif')">
+        </div>
+        <div id="head"></div>
+        <img id="gif" src="imagenes/elgif.gif" onclick="ocultar('gif')" height="500">
+
+
+
+
+    </div>
+    
+</body>
+</html>
